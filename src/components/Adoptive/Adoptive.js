@@ -14,7 +14,7 @@ import {
   AiFillSkype,
 } from "react-icons/ai";
 import { Accordion } from "../Accordian/Accordian";
-const Navbar = () => {
+const Adoptive = () => {
   return (
     <div>
       <div class="main-container">
@@ -368,4 +368,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Adoptive;

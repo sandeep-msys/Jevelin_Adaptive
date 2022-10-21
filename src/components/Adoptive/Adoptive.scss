@@ -67,23 +67,6 @@ body {
   }
 }
 
-// .nav {
-//   .nav-links {
-//     a {
-//       display: inline;
-//       padding: 13px 10px 13px 10px;
-//       text-decoration: none;
-//       color: #001388;
-//     }
-//   }
-// }
-// .nav {
-//   .nav-links {
-//     a:hover {
-//       // background-color: rgba(0, 0, 0, 0.3);
-//     }
-//   }
-// }
 .nav {
   #nav-check {
     display: none;
@@ -139,7 +122,6 @@ body {
 
   .nav { .nav-links { a {
     display: block;
-    // width: 100%;
   }
 }
 }
@@ -170,8 +152,6 @@ body {
   
 }
 .navbar-container{
-  // padding: 10%;
-  // width: 10%;
   color: $blueColor;
   display: flex;
   justify-content: space-between;

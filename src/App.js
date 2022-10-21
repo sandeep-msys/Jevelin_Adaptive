@@ -1,9 +1,8 @@
-import Navbar from "./components/Navbar/Navbar";
 import './App.css'
+import Adoptive from "./components/Adoptive/Adoptive";
 function App() {
   return (
-    <div class='App'><Navbar/></div>
-    
+    <div class='App'><Adoptive/></div>
   );
 }
 
