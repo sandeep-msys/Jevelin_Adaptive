@@ -1,12 +1,12 @@
-import "./Navbar.scss";
-import "./Nav.scss";
+import "./Adoptive.scss";
+
 import {
   BsFillBadgeTmFill,
   BsFillBagXFill,
   BsFillDashSquareFill,
   BsFillGridFill,
 } from "react-icons/bs";
-import { FaHome, FaTelegramPlane } from "react-icons/fa";
+import { FaHome, FaTelegramPlane,FaHamburger } from "react-icons/fa";
 import {
   AiOutlineFacebook,
   AiOutlineWhatsApp,
@@ -17,27 +17,24 @@ import { Accordion } from "../Accordian/Accordian";
 const Adoptive = () => {
   return (
     <div>
-      <div class="main-container">
+      <div class=" main-container">
         <div class="navbar">
-          <div class="nav">
-            <input type="checkbox" id="nav-check" />
-            <div class="nav-header">
-              <div class="nav-title">AntivirusAMP</div>
-            </div>
-            <div class="nav-btn">
-              <label for="nav-check">
-                <span></span>
-                <span></span>
-                <span></span>
-              </label>
-            </div>
-
-            <div class="nav-links">
+          <div class="nav-header">
+            <div class="nav-title">AntivirusAMP</div>
+            <div class="nav-links" id="mynav">
               <AiOutlineFacebook class="icons" />
               <AiOutlineWhatsApp class="icons" />
               <AiFillInstagram class="icons" />
               <AiFillSkype class="icons" />
+              <div class="navbar-sider">
+                <pre>Official information </pre>
+                <pre>from the WHO</pre>
+              </div>
             </div>
+            <div class='hamburger'>
+            <button class="my-button" id="my-button">
+        <FaHamburger class='ham-icon'/>
+    </button></div>
           </div>
         </div>
 
@@ -301,7 +298,7 @@ const Adoptive = () => {
         </div>
       </div>
 
-      <h3 class="virus-h2">Virus Council coordination:</h3>
+      <h3 class="virus-h2">Virus Coordination Council:</h3>
       <div class=" council-cards-container">
         <div class=" council-card">
           <h3>Hopkons J.D</h3>

@@ -1,164 +1,45 @@
 $blueColor: #001388;
 $redColor:#FB5F3D;
 
-.navbar {
-  margin: 10px;
-  font-family: roboto;
-}
-* {
-  box-sizing: border-box;
-}
-.icons{
-  color: #001388;
-    margin-right: 9px;
-    margin-left: 9px;
-    float: right;
-    margin-top: 12px;
-}
-
 body {
-  margin: 0px;
-  font-family: "segoe ui";
+  font-family: sans-serif;
 }
-
-.nav {
-  height: 10%;
-  width: 100%;
-  background-color: #efefef;
-  position: fixed;
-  left: 0%;
-  top: 0%;
+.main-container{
+  margin: 5%;
 }
+.navbar{
 
-.nav {
-
- .nav-header {
-  display: inline;
-}
-}
-
-.nav {
-  .nav-header {
-    .nav-title {
-      display: inline-block;
-      font-size: 2em;
-      font-weight: 600;
+  .nav-header{
+    display: flex;
+    justify-content: space-between;
+    .nav-title{
       color: #001388;
-      padding: 10px;
+      font-size: 1.2em;
+      font-weight: 700;
+    }
+    .nav-links{
+      display: none;
       
     }
-  }
-}
-
-.nav {
-  .nav-btn {
-    display: none;
-  }
-}
-
-.nav {
-  .nav-links {
-   
-    display: inline;
-     float:right;
-     margin-bottom: 4%;
-    font-size: 1em;
-    // margin-right: 5%;
-  }
-}
-
-.nav {
-  #nav-check {
-    display: none;
-  }
-}
-
-@media (max-width: 786px) {
-  .nav {
-    .nav-btn {
-      display: inline-block;
-      position: absolute;
-      right: 0px;
-      top: 0px;
+    .hamburger{.my-button {
+      color:#001388;
+      cursor: pointer;
+      font-size: 20px;
+      display: inline;
     }
-  }
-  .nav {
-    .nav-btn {
-      label {
-        display: inline-block;
-        width: 50px;
-        height: 50px;
-        padding: 13px;
-      }
+    .my-button:focus {
+      outline: none;
     }
-  }
-
-  .nav {
-    .nav-btn {
-      label {
-        span {
-          display: block;
-          width: 25px;
-          height: 10px;
-          border-top: 2px solid #2b3238;
-        }
-      }
     }
-  }
-  .nav { .nav-links {
-    position: absolute;
-    // display: block;
-    width: 100%;
-    background-color: #efefef;
-    height: 0px;
-    transition: all 0.3s ease-in;
-    overflow-y: hidden;
-    top: 50px;
-    left: 0px;
-    // text-align: right;
-    // padding-right: 5%;
-  }
-}
+    
 
-  .nav { .nav-links { a {
-    display: block;
   }
-}
-}
-  .nav { #nav-check:not(:checked) ~ .nav-links {
-    height: 0px;
-  }
-}
-  .nav {
-
-   #nav-check:checked ~ .nav-links {
-    height: calc(100vh - 500px);
-    overflow-y: auto;
-  }
-}
-}
-
-
-
-.main-container{
-  margin: 4%;
 }
 .medium-icon{
   font-size: 2em;
 }
-
 .border{
   border: 2px solid red;
-  
-}
-.navbar-container{
-  color: $blueColor;
-  display: flex;
-  justify-content: space-between;
-}
-.nav-title{
-  
-  font-size: 1.2em;
 }
 .icon{
   margin: 5%;
@@ -486,28 +367,59 @@ body {
   
 }
 
-// @media only screen and (min-width: 320px){
-
-// }
-
-
-
 
 
 
 @media only screen and (min-width: 768px){
+  .hamburger{
+    display: none;
+  }
   .border{
     border: 2px solid blue;
   }
-  .navbar-container{
-    .nav-title{
-      font-size: 1.8em;
+  .navbar{
+    padding-left: 5%;
+    padding-right: 10%;
+    height: 10%;
+    width: 90%;
+    background-color: white;
+    border-bottom: 2px solid #a4a5af;
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    .nav-header {
+      display: flex;
+      justify-content: space-between;
+      .nav-title {
+        display: inline;
+        font-size: 2em;
+        font-weight: 600;
+        color: #001388;
+        padding: 1%;
+      }
+      .nav-links {
+        display: inline-flex; 
+        .icons{
+            font-size: 2.4em;
+            color: #001388;
+            margin-right: 3%;
+            margin-top: 3.6%;
+        }
+        .nav-sider{
+          display: inline;
+          border-left: 3px solid #001388;
+          font-size: 2.8em;
+          pre{
+            color: #001388;
+          }
+        }
+      }
+      
     }
   }
 
-
   .operation-container{
-    padding-top: 5%;
+    padding-top: 20%;
     padding-bottom: 5%;
   }
   .operation-title-container{
@@ -565,7 +477,7 @@ body {
     text-align: start;
     padding: 3%;
     padding-left: 0%;
-    margin-right: 26%;
+    margin-right: 22%;
     h1{
       font-size: 3.0em;
     }
@@ -682,7 +594,7 @@ body {
         img{
           margin-top: 5%;
           margin-bottom: 5%;
-          width: 170%;
+          width: 150%;
           height: 100%;
       }
       }
@@ -821,82 +733,130 @@ body {
 }
 
 
+
+
+
+// 1024 Completed 
 @media only screen and (min-width: 1024px){
+  .hamburger{
+    display: none;
+  }
+  body {
+    font-family: sans-serif;
+  }
   .border{
     border: 2px solid blue;
   }
-  .navbar-container{
-    .nav-title{
-      font-size: 1.8em;
+  .navbar{
+    padding-left: 5%;
+    padding-right: 10%;
+    // padding: 1%;
+    height: 10%;
+    width: 90%;
+    background-color: white;
+    border-bottom: 2px solid #a4a5af;
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    .nav-header {
+      display: flex;
+      justify-content: space-between;
+      .nav-title {
+        display: inline;
+        font-size: 2em;
+        font-weight: 600;
+        color: #001388;
+        padding: 1%;
+      }
+      .nav-links {
+        display: inline-flex; 
+        .icons{
+            font-size: 2.4em;
+            color: #001388;
+            margin-right: 4%;
+            margin-top: 3.5%;
+        }
+        .nav-sider{
+          display: inline;
+          border-left: 3px solid #001388;
+          // padding: 0.2em;
+          pre{
+            color: #001388;
+          }
+        }
+      }
+      
     }
   }
 
 
   .operation-container{
-    padding-top: 5%;
+    padding-top: 10%;
     padding-bottom: 5%;
     display: flex;
-  }
-  .operation-title-container{
-    padding-right: 25%;
-    text-align: start;
-    h1{
-      font-size: 4.5em;
-      line-height: 120%;
-    }
-  }
-  .stay-home-container{
-    margin-top: 15%;
-    padding-left: 0%;
-    margin-bottom: 0%;
-    padding: 5%;
-    .stay-home-text-container{
-      width: 60%;
-      padding: 5%;
-      h3{
-        font-size: 1.5em;
-      }
-      p{
-        font-size: 23px;
+    .operation-title-container{
+      padding-right: 25%;
+      text-align: start;
+      h1{
+        font-size: 4.5em;
+        line-height: 120%;
       }
     }
-    .medium-icon{
-      margin-left: 0%;
-      margin-top: 70%;
-      font-size: 6em;
+    .stay-home-container{
+      margin-top: 15%;
+      padding-left: 0%;
+      margin-bottom: 0%;
+      padding: 3%;
+      .stay-home-text-container{
+        width: 60%;
+        padding: 5%;
+        h3{
+          font-size: 1.5em;
+        }
+        p{
+          font-size: 23px;
+        }
+      }
+      .medium-icon{
+        margin-left: 0%;
+        margin-top: 70%;
+        font-size: 6em;
+      }
     }
-  }
-  .report-card-container{
-    margin-top: 5%;
-    padding: 5%;
-    img{
-      margin: 4%;
+    .report-card-container{
       margin-top: 5%;
-      width: 39%;
-      height: 15%;
-    }
-    div{
-      padding: 0%;
-      .p-red {
-        color: $redColor;
-        margin-top: 10%;
+      padding: 5%;
+      img{
+        margin: 4%;
+        margin-top: 5%;
+        width: 39%;
+        height: 15%;
+      }
+      div{
+        padding: 0%;
+        .p-red {
+          color: $redColor;
+          margin-top: 10%;
+        }
       }
     }
   }
+  
   .marks-container{
     display: flex;
   flex-wrap: wrap;
   margin-bottom: 5%;
-  }
   .marks-inner-container{
     text-align: start;
     padding: 3%;
     padding-left: 0%;
-    margin-right: 3%;
+    margin-right: 2%;
     h1{
       font-size: 3.0em;
     }
   }
+  }
+  
 
 .matter-container{
   
@@ -960,6 +920,8 @@ body {
       width: 15%;
       text-align: start;
       padding: 4%;
+      padding-top: 7%;
+      padding-bottom: 7%;
       margin: 0%;
       .medium-icon{
         margin-left: 0%;
@@ -999,6 +961,7 @@ body {
     div{
       display: flex;
       flex-direction: row;
+      margin-top: 4%;
     }
     input{
       width: 28%;
@@ -1102,6 +1065,7 @@ body {
             margin-bottom: 0%;
             font-size: 1.6em;
             font-weight: 500;
+            
           }
           icon{
             margin-top: 0%;
