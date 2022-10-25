@@ -6,7 +6,8 @@ import {
   BsFillDashSquareFill,
   BsFillGridFill,
 } from "react-icons/bs";
-import { FaHome, FaTelegramPlane,FaHamburger } from "react-icons/fa";
+import { FaHome, FaTelegramPlane } from "react-icons/fa";
+import {GiHamburgerMenu}from 'react-icons/gi'
 import {
   AiOutlineFacebook,
   AiOutlineWhatsApp,
@@ -33,7 +34,7 @@ const Adoptive = () => {
             </div>
             <div class='hamburger'>
             <button class="my-button" id="my-button">
-        <FaHamburger class='ham-icon'/>
+        <GiHamburgerMenu class='ham-icon'/>
     </button></div>
           </div>
         </div>

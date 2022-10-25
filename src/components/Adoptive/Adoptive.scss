@@ -8,7 +8,35 @@ body {
   margin: 5%;
 }
 .navbar{
-
+  padding-left: 5%;
+  padding-right: 10%;
+  height: 10%;
+  width: 90%;
+  background-color: white;
+  border-bottom: 2px solid #a4a5af;
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  .nav-header {
+    margin-top: 5%;
+    margin: 5%;
+    display: flex;
+    justify-content: space-between;
+    .nav-title {
+      display: inline;
+      font-size: 2em;
+      font-weight: 600;
+      color: #001388;
+      padding: 1%;
+    }
+    
+    
+  }
+}
+.navbar{
+  width: 100%;
+position: fixed;
+background-color: white;
   .nav-header{
     display: flex;
     justify-content: space-between;
